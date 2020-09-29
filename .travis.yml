@@ -4,7 +4,7 @@ services:
 before_install:
   - docker build -t skswami91/frontend-project -f Dockerfile.dev .
 script:
-  - docker run -e CI=true skswami91/frontend-nodejs npm run test -- --coverage
+  - docker run -e CI=true skswami91/frontend-project npm run test -- --coverage
 deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
