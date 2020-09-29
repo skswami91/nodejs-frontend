@@ -9,7 +9,7 @@ deploy:
   provider: elasticbeanstalk
   region: "ap-southeast-1"
   app: "docker-react-frontend"
-  env: "DockerReactFrontend-env"
+  env: "docker-env"
   bucket_name: "elasticbeanstalk-ap-southeast-1-887637364220"
   bucket_path: "docker-react-frontend"
   access_key_id: "$AWS_ACCESS_KEY"
